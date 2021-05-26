@@ -17,8 +17,8 @@ function whitespaceHandler(text) {
 }
 
 function interpunctionHandler(text){
-  text = text.replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()@\+\?><\[\]\+]/g, ' ');
-  return whitespaceHandler(text);
+  textHandled = text.replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()@\+\?><\[\]\+]/g, ' ');
+  return whitespaceHandler(textHandled);
 }
 
 function generateChunks(words) {
